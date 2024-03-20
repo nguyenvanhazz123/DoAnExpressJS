@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        block head
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            link(rel="stylesheet", href="/css/style.css")
+            link(rel="shortcut icon", href="/img/favicon.png", type="image/png")
+            link(href="https://fonts.googleapis.com/css?family=Lato:300,300i,700" rel="stylesheet")
+            script(src='https://js.stripe.com/v3/')
+            title Natours | #{title}
+    body 
+        //- h1 nguyen van ha
+        //- h1=tour 
+        //- h2=user.toUpperCase()
+
+        //- - const x = 9
+        //- h3=x*2
+
+        //- p This is contents
+
+        //- HEADER
+        include _header
+
+        //- CONTENT
+        block content
+            h1 This is base
+
+        //- FOOTER
+        include _footer
+        
+        //- script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js" integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        //- script(src='/js/leaflet.js')
+        //- script(src='/js/login.js')
+        script(src='/js/bundled/index.js')
